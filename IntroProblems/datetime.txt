@@ -16,3 +16,7 @@ Gray Code
 Tower of Hanoi (looked at sol D:)
 Creating Strings
 Apple Division
+7/31/23:
+Digit Queries
+
+Chessboard of Queens and Grid Paths seem difficult for now
