@@ -1,0 +1,18 @@
+7/29/23:
+Weird Algorithm
+Missing Number
+Repetitions
+Increasing Array
+Permutations
+Number Spiral
+Two Knights
+Two Sets
+Bit Strings
+Trailing Zeros
+Coin Piles
+Palindrome Reorder
+7/30/23:
+Gray Code
+Tower of Hanoi (looked at sol D:)
+Creating Strings
+Apple Division
