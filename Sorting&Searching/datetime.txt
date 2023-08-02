@@ -1,0 +1,3 @@
+7/31/23:
+Distinct Numbers--funny scuffed python solution eventually worked
+
