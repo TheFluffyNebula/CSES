@@ -1,3 +1,11 @@
 7/31/23:
 Distinct Numbers--funny scuffed python solution eventually worked
-
+8/2/23:
+Apartments -- i forgot how to check for bounds
+8/3/23:
+Ferris Wheel -- I'm surprised this worked :o
+Concert Tickets -- Wish I could've solved this on my own
+I still haven't seen a working python solution to concert tickets
+Restaurant Customers -- improved over my interval solution 5mo ago by a lot :D
+Movie Festival -- Classic Greedy
+Sum of Two Values -- Classic Two Pointers
