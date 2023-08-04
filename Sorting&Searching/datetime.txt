@@ -1,5 +1,5 @@
 7/31/23:
-Distinct Numbers--funny scuffed python solution eventually worked
+Distinct Numbers-- n^2 -> n log n via bisect
 8/2/23:
 Apartments -- i forgot how to check for bounds
 8/3/23:
@@ -9,3 +9,8 @@ I still haven't seen a working python solution to concert tickets
 Restaurant Customers -- improved over my interval solution 5mo ago by a lot :D
 Movie Festival -- Classic Greedy
 Sum of Two Values -- Classic Two Pointers
+Maximum Subarray Sum -- tricky prefix maneuvers
+Stick Lengths -- pretty easy
+Missing Coin Sum -- cool problem, prefix sum :o
+Collecting Numbers -- I'm really surprised this worked as well
+Collecting Numbers 2 -- 
