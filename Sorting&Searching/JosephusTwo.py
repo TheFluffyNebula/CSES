@@ -1,8 +1,8 @@
 import sys
-# sys.stdin = open("JosephusOne.in")
+# sys.stdin = open("JosephusTwo.in")
 from collections import deque
 
-n = int(input())
+n, skip = map(int,input().split())
 
 ans = []
 def josephus(n, k):
@@ -14,10 +14,5 @@ def josephus(n, k):
         queue.rotate(-k+1)
         ans.append(queue.popleft())
 
-josephus(n, 2)
+josephus(n, skip + 1)
 print(*ans)
-
-
-'''
-had to look this one up :/
-'''

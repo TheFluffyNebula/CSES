@@ -21,3 +21,5 @@ Playlist -- similar but not the same as segment of small sets in CF Edu (2P)
 had a bit of trouble moving the left pointer
 Towers -- had to look at an older solution but was able to recreate the idea mostly by myself this time
 Traffic Lights -- another impossible via python due to cpp sorted sets
+Josephus Problem 1 -- I had to look this up but I'm glad I did
+Josephus Problem 2 -- looks like you can't brute force this one, TLE for now
