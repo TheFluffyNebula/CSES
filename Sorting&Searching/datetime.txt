@@ -1,3 +1,5 @@
+Note: if there is a cpp solution it means i failed to solve it/get a solution in python 
+unofficial edi: https://codeforces.com/blog/entry/83295
 7/31/23:
 Distinct Numbers-- n^2 -> n log n via bisect
 8/2/23:
@@ -13,4 +15,9 @@ Maximum Subarray Sum -- tricky prefix maneuvers
 Stick Lengths -- pretty easy
 Missing Coin Sum -- cool problem, prefix sum :o
 Collecting Numbers -- I'm really surprised this worked as well
-Collecting Numbers 2 -- 
+Collecting Numbers 2 -- I got too lost :(
+8/4/23:
+Playlist -- similar but not the same as segment of small sets in CF Edu (2P)
+had a bit of trouble moving the left pointer
+Towers -- had to look at an older solution but was able to recreate the idea mostly by myself this time
+Traffic Lights -- another impossible via python due to cpp sorted sets
