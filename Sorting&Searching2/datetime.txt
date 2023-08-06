@@ -1,0 +1,9 @@
+8/4/23:
+Nested Ranges Check -- algorithm seems fine but when i made a python version it didn't work
+Nested Ranges Count -- skip
+8/5/23:
+Room Allocation -- cpp diff
+Factory Machines -- binary search :)
+Tasks and Deadlines -- simple theorem
+Reading Books -- "ayy logic for the win!"
+Sum of Three Values -- ...
