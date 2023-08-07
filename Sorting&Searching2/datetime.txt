@@ -17,4 +17,4 @@ Subarray Distinct Values -- I think I've seen this on CF Edu before
 Array Division -- binary search :)
 Sliding Median -- skip :/, which means sliding cost is also a skip since it uses the median
 Movie Festival II -- once again, sorted set is required *rolls eyes*, cpp version works!
-Maximum Subarray Sum II -- last one!!
+Maximum Subarray Sum II -- last one!!, ver. 1 but with 2P
