@@ -10,7 +10,11 @@ if sum(a[:n - 1]) >= a[-1]:
 else:
     print(a[-1] * 2)
 
-
+''' short version
+n = int(input())
+a = sorted(list(map(int,input().split())))
+print(sum(a)) if sum(a[:n - 1]) >= a[-1] else print(a[-1] * 2)
+'''
 '''
 trying a few different strategies
 1. partition based on mx books

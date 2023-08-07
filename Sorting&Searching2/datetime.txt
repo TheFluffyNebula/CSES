@@ -6,4 +6,9 @@ Room Allocation -- cpp diff
 Factory Machines -- binary search :)
 Tasks and Deadlines -- simple theorem
 Reading Books -- "ayy logic for the win!"
-Sum of Three Values -- ...
+Sum of Three Values -- happy to see i was able to get to the solution quicker this time!
+Sum of Four Values -- 24/26 :/ yeah, not sure how meet in the middle works yet
+8/6/23:
+Nearest Smaller Values -- had to look up the solution, implementation was simple
+Subarray Sums I -- standard 2 pointer approach
+Subarray Sums II -- had to skip, one tc off :/
