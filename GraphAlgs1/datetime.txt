@@ -1,0 +1,8 @@
+8/7/23:
+Counting Rooms -- standard floodfill
+Labyrinth -- same thing, just start from A
+8/8/23:
+Building Roads -- connect the components
+Message Route -- parent array to store path
+Building Teams -- had to pull out old code, haven't done bipartite in awhile
+Round Trip
