@@ -5,4 +5,7 @@ Labyrinth -- same thing, just start from A
 Building Roads -- connect the components
 Message Route -- parent array to store path
 Building Teams -- had to pull out old code, haven't done bipartite in awhile
-Round Trip
+Round Trip -- chatgpt... it's ugly but it works
+Monsters -- exit brute force floodfill attempt, trying again soon
+Shortest Routes 1 -- can't get dijkstra's to work :/
+Shortest Routes 2 -- 
