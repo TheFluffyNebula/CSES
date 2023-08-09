@@ -1,6 +1,7 @@
-import sys # attempt 2, down to TLE on two cases
+import sys # attempt 3, no more progress
 # sys.stdin = open("Monsters.in")
 from collections import deque
+input = sys.stdin.readline
 n, m = map(int,input().split())
 board = [input() for _ in range(n)]
 # print(*board, sep = "\n")
@@ -37,44 +38,46 @@ def find_valid_border(x, y):
     return ret
 
 visited = [[False] * m for _ in range(n)]
-start_x, start_y = findA()
+A_x, A_y = findA()
 # Check if 'A' is already on the edge of the board
-if start_x == 0 or start_y == 0 or start_x == n - 1 or start_y == m - 1:
+if A_x == 0 or A_y == 0 or A_x == n - 1 or A_y == m - 1:
     print("YES")
     print(0)  # No moves needed
     exit()  # Exit the script
-# print("A Location: ", start_x, start_y)
-possible_border = find_valid_border(start_x,start_y)
+# print("A Location: ", A_x, A_y)
+possible_border = find_valid_border(A_x,A_y)
 # print(possible_border)
 
-def bfs_from_point(x, y, target_char):
+def find_AM(x, y):
     q = deque([(x, y, 0)])  # Adding a depth (distance) to the BFS queue
     visited[x][y] = True
+    aDist, mDist = float('inf'), float('inf')
+    foundA, foundM = False, False
     while q:
         x, y, dist = q.popleft()
         for i in range(4):
             nx, ny = x + dx[i], y + dy[i]
             if out(nx, ny) or visited[nx][ny] or board[nx][ny] == '#':
                 continue
-            if board[nx][ny] == target_char:
-                return dist + 1  # Return the distance to the target character
+            if board[nx][ny] == 'A':
+                aDist = min(aDist, dist + 1)  # Return the distance to the target character
+                foundA = True
+                if foundA and foundM:
+                    return aDist, mDist
+            elif board[nx][ny] == 'M':
+                mDist = min(mDist, dist + 1)
+                foundM = True
+                if foundA and foundM:
+                    return aDist, mDist
             q.append((nx, ny, dist + 1))
             visited[nx][ny] = True
-    return float('inf')  # If target_char is not reachable
-
-def find_A(x, y):
-    return bfs_from_point(x, y, 'A')
-
-def find_M(x,y):
-    return bfs_from_point(x, y, 'M')
+    return aDist, mDist
 
 valid = False
 for i in range(len(possible_border)):
     visited = [[False] * m for _ in range(n)]
     start_x, start_y = possible_border[i][0], possible_border[i][1]
-    dist_A = find_A(start_x, start_y)
-    visited = [[False] * m for _ in range(n)]
-    dist_M = find_M(start_x, start_y)
+    dist_A, dist_M = find_AM(start_x, start_y)
     if dist_A < dist_M:
         valid = True
         # print(dist_A,dist_M,start_x,start_y)
@@ -103,8 +106,6 @@ def valid_ff(x, y):
             q.append((nx, ny))
             visited[nx][ny] = True
     return False, None, None, None
-
-
 
 if valid:
     visited = [[False] * m for _ in range(n)]
@@ -142,4 +143,8 @@ this time, two functions on every border cell(valid)
 find_nearest_monster
 find_nearest_a
 f_n_m and f_n_a
+
+3rd attempt:
+instead of doing the same flood fill twice,
+see whether we find A or M first
 '''
