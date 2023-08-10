@@ -1,0 +1,6 @@
+when i get stuck -> https://codeforces.com/blog/entry/77128
+8/9/23:
+Static Range Sum Queries -- pf sums
+8/10/23:
+Static Range Minimum Queries -- copied Errichto video solution
+Dynamic Range Sum Queries -- um
