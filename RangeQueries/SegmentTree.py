@@ -1,7 +1,3 @@
-import sys # TLE TC2 :rage:
-# sys.stdin = open("DynamicSumQueries.in")
-input = sys.stdin.readline
-
 class SegmentTree:
     def __init__(self, n):
         self.size = 1
@@ -48,21 +44,3 @@ class SegmentTree:
     
     def sum_all(self, l, r):
         return self.sum_segment(l, r, 0, 0, self.size)
-
-n, m = map(int,input().split())
-a = list(map(int,input().split()))
-st = SegmentTree(n)
-st.build_all(a) # build in linear time instead of n log n
-# for i in range(n):
-#     st.set_all(i, a[i]) # initialize the segment tree
-for query in range(m):
-    a, b, c = map(int,input().split())
-    b = b - 1 # make 0-indexed
-    if a == 1:
-        st.set_all(b, c) # set index to value
-    else:
-        print(st.sum_all(b, c))
-
-'''
-need segment tree? yep (probably)
-'''
