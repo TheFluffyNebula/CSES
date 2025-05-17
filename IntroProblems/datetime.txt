@@ -26,3 +26,4 @@ Chessboard of Queens and Grid Paths seem difficult for now
 I have the pseudocode for a generic backtracking algorithm, now I just have to try it
 oops, extremely inefficient and incorrect version
 had to chatgpt the solution but hopefully I should be able to try grid paths by myself
+hmm... not fast enough (I'll try cleaning it first when I get the chance)
