@@ -19,4 +19,10 @@ Apple Division
 7/31/23:
 Digit Queries
 
+5/22/24: Attempting Chessboard and Queens using CSES Handbook, Backtracking
+
 Chessboard of Queens and Grid Paths seem difficult for now
+5/17/25: now that I think about it, chessboard & grid paths are probably both backtracking problem
+I have the pseudocode for a generic backtracking algorithm, now I just have to try it
+oops, extremely inefficient and incorrect version
+had to chatgpt the solution but hopefully I should be able to try grid paths by myself
